@@ -1,0 +1,24 @@
+ 
+DO $$
+DECLARE
+    i INT := 1;
+    id_facture VARCHAR(200);
+    daty DATE;
+    designation VARCHAR(200);
+    etat NUMERIC(10);
+    montanttotal NUMERIC(18, 2);
+BEGIN
+    WHILE i <= 500000 LOOP 
+        daty := '2020-01-01'::DATE + (random() * (NOW() - '2020-01-01'::DATE));
+        designation := 'FACT Numero ' || i;
+        etat := floor(random() * 2); -- Génère 0 ou 1 pour l'état
+        montanttotal := ROUND(random() * 10000) / 100; -- Montant aléatoire entre 0 et 10000 avec 2 décimales
+        
+        -- Insertion de la donnée
+        INSERT INTO Facture (daty, designation, etat, montanttotal)
+        VALUES ( daty, designation, etat, montanttotal);
+        
+        i := i + 1;
+    END LOOP;
+END $$;
+

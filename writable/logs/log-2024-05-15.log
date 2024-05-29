@@ -1,0 +1,9 @@
+CRITICAL - 2024-05-15 12:56:09 --> ParseError: syntax error, unexpected token "endforeach"
+in APPPATH\Views\listeEncours.php on line 124.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('listeEnCours', [], true)
+ 3 APPPATH\Controllers\AdminController.php(46): view('listeEnCours', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->listeEncours()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,25 @@
+--CREATION DE MODELE
+php spark make:model User --suffix
+
+
+--AUTHENTIFICATION
+php spark make:filter Auth
+php spark make:filter Noauth
+
+--CREATION DE VALIDATION
+php spark make:validation Userrules
+
+--CREATION DE CONTROLLER
+$ php spark make:controller User
+
+$ php spark make:controller Dashboard
+
+php spark make:controller Search --suffix
+
+php spark make:controller Site
+
+-----PDF
+composer require dompdf/dompdf
+
+
+Les règles de format n'autorisent pas les chaînes vides. Si vous souhaitez autoriser les chaînes vides, ajoutez la permit_empty règle.

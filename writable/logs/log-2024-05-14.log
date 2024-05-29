@@ -1,0 +1,7 @@
+CRITICAL - 2024-05-14 22:48:35 --> ErrorException: Undefined variable $html
+in APPPATH\Controllers\ClientController.php on line 88.
+ 1 APPPATH\Controllers\ClientController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'C:\\xampp\\htdocs\\Evaluation\\app\\Controllers\\ClientController.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ClientController->getSousDevis()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
